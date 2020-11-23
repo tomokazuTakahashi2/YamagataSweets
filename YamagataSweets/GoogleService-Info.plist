@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>867957986827-o422eoa55n91e5ch0qrs06l31t7vq760.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.867957986827-o422eoa55n91e5ch0qrs06l31t7vq760</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCn1L91UFQHC36hqgaHKfPM2mWp3J8Zq1U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>867957986827</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.tomokazu.takahashi.YamagataSweets</string>
+	<key>PROJECT_ID</key>
+	<string>yamagatasweets</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yamagatasweets.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:867957986827:ios:8171c17edf96e68310190e</string>
+	<key>DATABASE_URL</key>
+	<string>https://yamagatasweets.firebaseio.com</string>
+</dict>
+</plist>

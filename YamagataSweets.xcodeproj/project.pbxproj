@@ -3,27 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A59DC59AE746EEC9C909E2C /* Pods_YamagataSweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E9C6D6CFE642745FDF9CC1 /* Pods_YamagataSweets.framework */; };
+		6467E28A256C441400682FD4 /* HomeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E289256C441400682FD4 /* HomeViewController2.swift */; };
+		6467E291256C449500682FD4 /* HomeViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E290256C449500682FD4 /* HomeViewController3.swift */; };
+		6467E293256C44AC00682FD4 /* HomeViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E292256C44AC00682FD4 /* HomeViewController4.swift */; };
+		6467E295256C44BC00682FD4 /* HomeViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E294256C44BC00682FD4 /* HomeViewController5.swift */; };
+		6467E297256C44CF00682FD4 /* HomeViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E296256C44CF00682FD4 /* HomeViewController6.swift */; };
+		6467E299256C47E700682FD4 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E298256C47E700682FD4 /* PagesViewController.swift */; };
 		64E787F6255D15B40031DA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E787F5255D15B40031DA49 /* AppDelegate.swift */; };
 		64E787F8255D15B40031DA49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E787F7255D15B40031DA49 /* SceneDelegate.swift */; };
-		64E787FA255D15B40031DA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E787F9255D15B40031DA49 /* ViewController.swift */; };
 		64E787FD255D15B40031DA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E787FB255D15B40031DA49 /* Main.storyboard */; };
 		64E787FF255D15B60031DA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E787FE255D15B60031DA49 /* Assets.xcassets */; };
 		64E78802255D15B60031DA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E78800255D15B60031DA49 /* LaunchScreen.storyboard */; };
+		64E7880A255D173B0031DA49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64E78809255D173B0031DA49 /* GoogleService-Info.plist */; };
+		64E7880C255DB1B80031DA49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E7880B255DB1B80031DA49 /* HomeViewController.swift */; };
+		64E7880E255DBA2F0031DA49 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E7880D255DBA2F0031DA49 /* MyPageViewController.swift */; };
+		64E78810255DBAE10031DA49 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E7880F255DBAE10031DA49 /* NotificationViewController.swift */; };
+		64E78812255DBB080031DA49 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E78811255DBB080031DA49 /* SearchViewController.swift */; };
+		64E78815255DC2B40031DA49 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E78813255DC2B40031DA49 /* CollectionViewCell.swift */; };
+		64E78816255DC2B40031DA49 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E78814255DC2B40031DA49 /* CollectionViewCell.xib */; };
+		64E7881A255DC6DA0031DA49 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E78819255DC6DA0031DA49 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D6C23110908185FF2076C0D /* Pods-YamagataSweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YamagataSweets.debug.xcconfig"; path = "Target Support Files/Pods-YamagataSweets/Pods-YamagataSweets.debug.xcconfig"; sourceTree = "<group>"; };
+		6467E289256C441400682FD4 /* HomeViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController2.swift; sourceTree = "<group>"; };
+		6467E290256C449500682FD4 /* HomeViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController3.swift; sourceTree = "<group>"; };
+		6467E292256C44AC00682FD4 /* HomeViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController4.swift; sourceTree = "<group>"; };
+		6467E294256C44BC00682FD4 /* HomeViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController5.swift; sourceTree = "<group>"; };
+		6467E296256C44CF00682FD4 /* HomeViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController6.swift; sourceTree = "<group>"; };
+		6467E298256C47E700682FD4 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		64E787F2255D15B40031DA49 /* YamagataSweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YamagataSweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E787F5255D15B40031DA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E787F7255D15B40031DA49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64E787F9255D15B40031DA49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64E787FC255D15B40031DA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64E787FE255D15B60031DA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E78801255D15B60031DA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E78803255D15B60031DA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E78809255D173B0031DA49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64E7880B255DB1B80031DA49 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		64E7880D255DBA2F0031DA49 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		64E7880F255DBAE10031DA49 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		64E78811255DBB080031DA49 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		64E78813255DC2B40031DA49 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		64E78814255DC2B40031DA49 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		64E78819255DC6DA0031DA49 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		C1E9C6D6CFE642745FDF9CC1 /* Pods_YamagataSweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YamagataSweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E5C4B2789479BE982D6567 /* Pods-YamagataSweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YamagataSweets.release.xcconfig"; path = "Target Support Files/Pods-YamagataSweets/Pods-YamagataSweets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A59DC59AE746EEC9C909E2C /* Pods_YamagataSweets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34C83DBDD76C4B43E86D2402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1E9C6D6CFE642745FDF9CC1 /* Pods_YamagataSweets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64E787E9255D15B40031DA49 = {
 			isa = PBXGroup;
 			children = (
 				64E787F4255D15B40031DA49 /* YamagataSweets */,
 				64E787F3255D15B40031DA49 /* Products */,
+				C53165748EB2583025F01174 /* Pods */,
+				34C83DBDD76C4B43E86D2402 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +99,59 @@
 			children = (
 				64E787F5255D15B40031DA49 /* AppDelegate.swift */,
 				64E787F7255D15B40031DA49 /* SceneDelegate.swift */,
-				64E787F9255D15B40031DA49 /* ViewController.swift */,
+				64E7881B255DCBF90031DA49 /* Model */,
+				64E78818255DC59D0031DA49 /* Controller */,
+				64E78817255DC58B0031DA49 /* Cell */,
 				64E787FB255D15B40031DA49 /* Main.storyboard */,
 				64E787FE255D15B60031DA49 /* Assets.xcassets */,
 				64E78800255D15B60031DA49 /* LaunchScreen.storyboard */,
+				64E78809255D173B0031DA49 /* GoogleService-Info.plist */,
 				64E78803255D15B60031DA49 /* Info.plist */,
 			);
 			path = YamagataSweets;
+			sourceTree = "<group>";
+		};
+		64E78817255DC58B0031DA49 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				64E78813255DC2B40031DA49 /* CollectionViewCell.swift */,
+				64E78814255DC2B40031DA49 /* CollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		64E78818255DC59D0031DA49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E7880B255DB1B80031DA49 /* HomeViewController.swift */,
+				6467E298256C47E700682FD4 /* PagesViewController.swift */,
+				6467E289256C441400682FD4 /* HomeViewController2.swift */,
+				6467E290256C449500682FD4 /* HomeViewController3.swift */,
+				6467E292256C44AC00682FD4 /* HomeViewController4.swift */,
+				6467E294256C44BC00682FD4 /* HomeViewController5.swift */,
+				6467E296256C44CF00682FD4 /* HomeViewController6.swift */,
+				64E78811255DBB080031DA49 /* SearchViewController.swift */,
+				64E7880F255DBAE10031DA49 /* NotificationViewController.swift */,
+				64E7880D255DBA2F0031DA49 /* MyPageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64E7881B255DCBF90031DA49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64E78819255DC6DA0031DA49 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C53165748EB2583025F01174 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C23110908185FF2076C0D /* Pods-YamagataSweets.debug.xcconfig */,
+				F5E5C4B2789479BE982D6567 /* Pods-YamagataSweets.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E78806255D15B60031DA49 /* Build configuration list for PBXNativeTarget "YamagataSweets" */;
 			buildPhases = (
+				3559BC7F530F7AF5B398147B /* [CP] Check Pods Manifest.lock */,
 				64E787EE255D15B40031DA49 /* Sources */,
 				64E787EF255D15B40031DA49 /* Frameworks */,
 				64E787F0255D15B40031DA49 /* Resources */,
+				EFAE3CD68BE63168FAF109C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +217,74 @@
 				64E78802255D15B60031DA49 /* LaunchScreen.storyboard in Resources */,
 				64E787FF255D15B60031DA49 /* Assets.xcassets in Resources */,
 				64E787FD255D15B40031DA49 /* Main.storyboard in Resources */,
+				64E7880A255D173B0031DA49 /* GoogleService-Info.plist in Resources */,
+				64E78816255DC2B40031DA49 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3559BC7F530F7AF5B398147B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YamagataSweets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFAE3CD68BE63168FAF109C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YamagataSweets/Pods-YamagataSweets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YamagataSweets/Pods-YamagataSweets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YamagataSweets/Pods-YamagataSweets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64E787EE255D15B40031DA49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E787FA255D15B40031DA49 /* ViewController.swift in Sources */,
+				64E78812255DBB080031DA49 /* SearchViewController.swift in Sources */,
+				64E78810255DBAE10031DA49 /* NotificationViewController.swift in Sources */,
+				64E7881A255DC6DA0031DA49 /* ItemModel.swift in Sources */,
+				6467E291256C449500682FD4 /* HomeViewController3.swift in Sources */,
+				64E7880E255DBA2F0031DA49 /* MyPageViewController.swift in Sources */,
+				6467E295256C44BC00682FD4 /* HomeViewController5.swift in Sources */,
+				64E78815255DC2B40031DA49 /* CollectionViewCell.swift in Sources */,
+				6467E299256C47E700682FD4 /* PagesViewController.swift in Sources */,
 				64E787F6255D15B40031DA49 /* AppDelegate.swift in Sources */,
+				6467E293256C44AC00682FD4 /* HomeViewController4.swift in Sources */,
 				64E787F8255D15B40031DA49 /* SceneDelegate.swift in Sources */,
+				64E7880C255DB1B80031DA49 /* HomeViewController.swift in Sources */,
+				6467E297256C44CF00682FD4 /* HomeViewController6.swift in Sources */,
+				6467E28A256C441400682FD4 /* HomeViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +426,7 @@
 		};
 		64E78807255D15B60031DA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6C23110908185FF2076C0D /* Pods-YamagataSweets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +439,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tomokazu.takahashi.YamagataSweets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		64E78808255D15B60031DA49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E5C4B2789479BE982D6567 /* Pods-YamagataSweets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tomokazu.takahashi.YamagataSweets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
