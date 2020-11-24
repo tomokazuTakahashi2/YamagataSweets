@@ -13,14 +13,26 @@ struct ItemModel: Codable {
 }
 
 struct Results: Codable{
-    let address: String
     let name: String
+    let latitude: String
+    let longitude: String
+    let url: String
     let photos: Photos
-    
+    let address: String
+    let tel: String
+    let opentime: String
+    let holiday: String
+     
     enum CodingKeys : String, CodingKey {
-        case address
         case name
+        case latitude
+        case longitude
+        case url
         case photos = "image_url"
+        case address
+        case tel
+        case opentime
+        case holiday
     }
     
 }
