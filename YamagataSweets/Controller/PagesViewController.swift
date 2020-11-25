@@ -26,7 +26,7 @@ class PagesViewController: UIViewController, UIPageViewControllerDelegate, UIPag
 
         //下の点々
         let position = UIScreen.main.bounds.size
-        pageControl.frame = CGRect(x: position.width / 2 - 19.5, y: position.height - 150, width: 39, height: 37)
+        pageControl.frame = CGRect(x: position.width / 2 - 19.5, y: position.height - 110, width: 39, height: 37)
         pageControl.numberOfPages = 6
         pageControl.currentPage = 0
         pageControl.isUserInteractionEnabled = false

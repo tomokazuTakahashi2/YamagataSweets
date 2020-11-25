@@ -25,7 +25,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         //コレクションビューのレイアウト
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-//        layout.itemSize = CGSize(width: collectionView.frame.width/2, height: collectionView.frame.width/2)
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 0.1
         collectionView.collectionViewLayout = layout

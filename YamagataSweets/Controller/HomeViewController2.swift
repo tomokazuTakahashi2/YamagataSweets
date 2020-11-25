@@ -11,6 +11,8 @@ import UIKit
 class HomeViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     var array = [Results]()
+    
+    var selectedItems:Results?
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -91,6 +93,24 @@ class HomeViewController2: UIViewController, UICollectionViewDelegate, UICollect
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return.init(width: collectionView.frame.width/2 - 20, height: collectionView.frame.width/2 + collectionView.frame.width/3)
+    }
+    //アイテムをタップしたら画面遷移
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        //タップされたアイテムをinformationVCに渡す
+        selectedItems = array[indexPath.item]
+        
+        // Identifierが"Segue"のSegueを使って画面遷移する関数
+        performSegue(withIdentifier: "Segue2", sender: nil)
+    }
+    
+    // 画面遷移先のViewControllerを取得し、データを渡す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Segue2" {
+            let informationVC = segue.destination as! InformationViewController
+            informationVC.selectedItem = selectedItems
+
+        }
     }
 
 }

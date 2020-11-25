@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "ドトールコーヒーショップ 山形市立病院済生館店.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
