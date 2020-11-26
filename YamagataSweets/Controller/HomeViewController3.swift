@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class HomeViewController3: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+
+class HomeViewController3: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, IndicatorInfoProvider {
+
+    //バーボタンのタイトル
+    var itemInfo: IndicatorInfo = "天童・東根・尾花沢"
     
     var array = [Results]()
     
@@ -39,7 +44,7 @@ class HomeViewController3: UIViewController, UICollectionViewDelegate, UICollect
     func getAPI(){
 
         //URLを生成
-        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&hit_per_page=100&offset_page=3") else {return}
+        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&areacode_m=AREAM6362&areacode_m=AREAM6375&hit_per_page=100") else {return}
 
         //Requestを生成
         var request = URLRequest(url: url)
@@ -113,5 +118,8 @@ class HomeViewController3: UIViewController, UICollectionViewDelegate, UICollect
 
         }
     }
-
+    //MARK:-XLPagerTabStrip
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return itemInfo
+    }
 }

@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class HomeViewController6: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+
+class HomeViewController6: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, IndicatorInfoProvider{
+    
+    //バーボタンのタイトル
+    var itemInfo: IndicatorInfo = "米沢・高畠・南陽"
     
     var array = [Results]()
     
@@ -25,7 +30,6 @@ class HomeViewController6: UIViewController, UICollectionViewDelegate, UICollect
         //コレクションビューのレイアウト
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-//        layout.itemSize = CGSize(width: collectionView.frame.width/2, height: collectionView.frame.width/2)
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 0.1
         collectionView.collectionViewLayout = layout
@@ -39,7 +43,7 @@ class HomeViewController6: UIViewController, UICollectionViewDelegate, UICollect
     func getAPI(){
 
         //URLを生成
-        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&hit_per_page=100&offset_page=6") else {return}
+        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&areacode_m=AREAM6362&hit_per_page=100") else {return}
 
         //Requestを生成
         var request = URLRequest(url: url)
@@ -113,5 +117,8 @@ class HomeViewController6: UIViewController, UICollectionViewDelegate, UICollect
 
         }
     }
-
+    //MARK:-XLPagerTabStrip
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return itemInfo
+    }
 }

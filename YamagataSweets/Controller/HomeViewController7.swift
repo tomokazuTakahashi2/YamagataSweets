@@ -1,18 +1,19 @@
 //
-//  HomeViewController.swift
+//  HomeViewController7.swift
 //  YamagataSweets
 //
-//  Created by Raphael on 2020/11/13.
+//  Created by Raphael on 2020/11/26.
 //  Copyright © 2020 Raphael. All rights reserved.
 //
 
 import UIKit
 import XLPagerTabStrip
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, IndicatorInfoProvider {
 
-    //ここがボタンのタイトルに利用されます
-    var itemInfo: IndicatorInfo = "山形市１"
+class HomeViewController7: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, IndicatorInfoProvider{
+    
+    //バーボタンのタイトル
+    var itemInfo: IndicatorInfo = "新庄・最上"
     
     var array = [Results]()
     
@@ -42,9 +43,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func getAPI(){
 
         //URLを生成
-        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&areacode_m=AREAM6352&hit_per_page=100") else {return}
+        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&areacode_m=AREAM6376&hit_per_page=100") else {return}
 
-        
         //Requestを生成
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -99,7 +99,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return.init(width: collectionView.frame.width/2 - 20, height: collectionView.frame.width/2 + collectionView.frame.width/3)
     }
-    
     //アイテムをタップしたら画面遷移
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
@@ -107,21 +106,19 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         selectedItems = array[indexPath.item]
         
         // Identifierが"Segue"のSegueを使って画面遷移する関数
-        performSegue(withIdentifier: "Segue", sender: nil)
+        performSegue(withIdentifier: "Segue7", sender: nil)
     }
     
     // 画面遷移先のViewControllerを取得し、データを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Segue" {
+        if segue.identifier == "Segue7" {
             let informationVC = segue.destination as! InformationViewController
             informationVC.selectedItem = selectedItems
 
         }
     }
-//MARK:-XLPagerTabStrip
+    //MARK:-XLPagerTabStrip
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return itemInfo
     }
-    
-    
 }

@@ -1,18 +1,18 @@
 //
-//  HomeViewController.swift
+//  HomeViewController1.swift
 //  YamagataSweets
 //
-//  Created by Raphael on 2020/11/13.
+//  Created by Raphael on 2020/11/26.
 //  Copyright © 2020 Raphael. All rights reserved.
 //
 
 import UIKit
 import XLPagerTabStrip
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, IndicatorInfoProvider {
+class HomeViewController1: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, IndicatorInfoProvider {
 
     //ここがボタンのタイトルに利用されます
-    var itemInfo: IndicatorInfo = "山形市１"
+    var itemInfo: IndicatorInfo = "山形市２"
     
     var array = [Results]()
     
@@ -42,7 +42,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func getAPI(){
 
         //URLを生成
-        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&areacode_m=AREAM6352&hit_per_page=100") else {return}
+        guard let url = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=ffd3c1155ff596e65e9d4cf8db64eb85&freeword=%E3%82%AB%E3%83%95%E3%82%A7&pref=PREF06&areacode_m=AREAM6352&hit_per_page=100&offset_page=2") else {return}
 
         
         //Requestを生成
@@ -107,12 +107,12 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         selectedItems = array[indexPath.item]
         
         // Identifierが"Segue"のSegueを使って画面遷移する関数
-        performSegue(withIdentifier: "Segue", sender: nil)
+        performSegue(withIdentifier: "Segue1", sender: nil)
     }
     
     // 画面遷移先のViewControllerを取得し、データを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Segue" {
+        if segue.identifier == "Segue1" {
             let informationVC = segue.destination as! InformationViewController
             informationVC.selectedItem = selectedItems
 
