@@ -799,19 +799,48 @@
                                     <navigationItem title="検索" id="ppd-WL-x6D"/>
                                 </items>
                             </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rp2-45-6Vk">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="byI-ex-YE8">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nst-qL-xti">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ab2-Jm-slT">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dBv-o8-Pgg" firstAttribute="trailing" secondItem="LzU-hR-MNy" secondAttribute="trailing" id="8yZ-zc-oa3"/>
                             <constraint firstItem="SUk-Mn-Elh" firstAttribute="top" secondItem="LzU-hR-MNy" secondAttribute="top" id="CmX-8W-DUW"/>
+                            <constraint firstItem="Rp2-45-6Vk" firstAttribute="leading" secondItem="LzU-hR-MNy" secondAttribute="leading" id="E10-hm-zHq"/>
                             <constraint firstItem="SUk-Mn-Elh" firstAttribute="trailing" secondItem="LzU-hR-MNy" secondAttribute="trailing" id="MRV-Aw-vri"/>
                             <constraint firstItem="dBv-o8-Pgg" firstAttribute="top" secondItem="SUk-Mn-Elh" secondAttribute="bottom" id="XLZ-qJ-LJ1"/>
+                            <constraint firstItem="Rp2-45-6Vk" firstAttribute="top" secondItem="dBv-o8-Pgg" secondAttribute="bottom" id="c4z-JX-4y7"/>
                             <constraint firstItem="dBv-o8-Pgg" firstAttribute="leading" secondItem="LzU-hR-MNy" secondAttribute="leading" id="mqU-Zg-Z7e"/>
                             <constraint firstItem="SUk-Mn-Elh" firstAttribute="leading" secondItem="LzU-hR-MNy" secondAttribute="leading" id="nCB-fL-gSx"/>
+                            <constraint firstItem="LzU-hR-MNy" firstAttribute="trailing" secondItem="Rp2-45-6Vk" secondAttribute="trailing" id="nZf-Eb-ur9"/>
+                            <constraint firstItem="LzU-hR-MNy" firstAttribute="bottom" secondItem="Rp2-45-6Vk" secondAttribute="bottom" id="vUw-W0-lKd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LzU-hR-MNy"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="検索" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="v34-zy-qmH"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Rp2-45-6Vk" id="SCI-v0-oAg"/>
+                        <outlet property="searchBar" destination="dBv-o8-Pgg" id="c0b-RY-Wcc"/>
+                        <segue destination="T6u-Ni-BL9" kind="show" identifier="SearchSegue" id="l8q-mA-A6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNv-Lo-0xm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -841,7 +870,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ejk-OQ-uW3"/>
+        <segue reference="l8q-mA-A6k"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bell.fill" catalog="system" width="128" height="124"/>

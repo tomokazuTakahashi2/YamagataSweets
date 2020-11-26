@@ -13,7 +13,6 @@
 		6467E293256C44AC00682FD4 /* HomeViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E292256C44AC00682FD4 /* HomeViewController4.swift */; };
 		6467E295256C44BC00682FD4 /* HomeViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E294256C44BC00682FD4 /* HomeViewController5.swift */; };
 		6467E297256C44CF00682FD4 /* HomeViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E296256C44CF00682FD4 /* HomeViewController6.swift */; };
-		6467E299256C47E700682FD4 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E298256C47E700682FD4 /* PagesViewController.swift */; };
 		6467E29B256CA2E100682FD4 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E29A256CA2E100682FD4 /* InformationViewController.swift */; };
 		6467E29D256D59CB00682FD4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E29C256D59CB00682FD4 /* WebViewController.swift */; };
 		6467E29F256EEEF300682FD4 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E29E256EEEF300682FD4 /* SlideViewController.swift */; };
@@ -43,7 +42,6 @@
 		6467E292256C44AC00682FD4 /* HomeViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController4.swift; sourceTree = "<group>"; };
 		6467E294256C44BC00682FD4 /* HomeViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController5.swift; sourceTree = "<group>"; };
 		6467E296256C44CF00682FD4 /* HomeViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController6.swift; sourceTree = "<group>"; };
-		6467E298256C47E700682FD4 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		6467E29A256CA2E100682FD4 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		6467E29C256D59CB00682FD4 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6467E29E256EEEF300682FD4 /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 		64E78818255DC59D0031DA49 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6467E298256C47E700682FD4 /* PagesViewController.swift */,
 				6467E29E256EEEF300682FD4 /* SlideViewController.swift */,
 				64E7880B255DB1B80031DA49 /* HomeViewController.swift */,
 				6467E2A6256FB2B400682FD4 /* HomeViewController1.swift */,
@@ -300,7 +297,6 @@
 				6467E295256C44BC00682FD4 /* HomeViewController5.swift in Sources */,
 				64E78815255DC2B40031DA49 /* CollectionViewCell.swift in Sources */,
 				6467E2A1256FACC100682FD4 /* HomeViewController7.swift in Sources */,
-				6467E299256C47E700682FD4 /* PagesViewController.swift in Sources */,
 				6467E2A5256FAD6400682FD4 /* HomeViewController9.swift in Sources */,
 				64E787F6255D15B40031DA49 /* AppDelegate.swift in Sources */,
 				6467E293256C44AC00682FD4 /* HomeViewController4.swift in Sources */,

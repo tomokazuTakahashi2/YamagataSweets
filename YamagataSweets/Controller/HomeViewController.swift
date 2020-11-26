@@ -63,7 +63,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 do{
                     //dataをJsonに変換
                     let json = try JSONDecoder().decode(ItemModel.self, from: data)
-                    print("json: ", json)
+                    //print("json: ", json)
                     
                     //コレクションビューに反映する
                     self.array = json.rest
