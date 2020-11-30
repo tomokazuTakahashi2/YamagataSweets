@@ -7,24 +7,37 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MyPageViewController: UIViewController {
 
+    @IBOutlet weak var logoutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        logoutButton.layer.cornerRadius = 10
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logoutButtonAction(_ sender: Any) {
+        handleLogout()
     }
-    */
-
+    
+    private func handleLogout(){
+        do{
+           try Auth.auth().signOut()
+            presentToMainSignUpViewController()
+            print("ログアウトしました")
+        } catch(let err){
+            print("ログアウトに失敗しました：\(err)")
+        }
+    }
+    private func presentToMainSignUpViewController(){
+        //画面遷移
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let signUpViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController")as! SignUpViewController
+        let navController = UINavigationController(rootViewController: signUpViewController)
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true, completion: nil)
+    }
 }

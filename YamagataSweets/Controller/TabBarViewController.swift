@@ -26,13 +26,13 @@ class TabBarViewController: UITabBarController {
     override func viewDidAppear(_ animated: Bool) {
         confirmLoggedInUser()
     }
-    
+    //カレントユーザーuidがnilか、ユーザー情報がnilだったら、SignUpViewControllerに飛ばす
     private func confirmLoggedInUser(){
-        if Auth.auth().currentUser?.uid == nil || user == nil{
+        if Auth.auth().currentUser == nil{
            presentToMainViewController()
         }
     }
-    
+    //SignUpViewControllerに飛ばす
     private func presentToMainViewController(){
         //画面遷移
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -42,7 +42,7 @@ class TabBarViewController: UITabBarController {
         self.present(navController, animated: true, completion: nil)
     }
     
-
+    //DateFormatter
     private func dateFormatterForCreatedAt(date: Date) -> String{
         let formatter = DateFormatter()
         formatter.dateStyle = .long

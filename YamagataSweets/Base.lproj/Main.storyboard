@@ -60,16 +60,33 @@
                                     <navigationItem title="マイページ" id="ZEI-hH-BZL"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ6-c7-JI9">
+                                <rect key="frame" x="57" y="683" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.92068511249999996" green="0.48384779690000002" blue="0.42490985990000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tld-fF-wrx"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="ログアウト"/>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="nDn-na-TzU" eventType="touchUpInside" id="Qv0-Ax-aps"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="CrL-bu-wn7" firstAttribute="trailing" secondItem="rK4-aT-XwT" secondAttribute="trailing" id="0Ec-aI-6bQ"/>
+                            <constraint firstItem="gZ6-c7-JI9" firstAttribute="centerX" secondItem="8vX-10-c4J" secondAttribute="centerX" id="Quj-9O-r8t"/>
                             <constraint firstItem="CrL-bu-wn7" firstAttribute="top" secondItem="rK4-aT-XwT" secondAttribute="top" id="boY-Gq-DqP"/>
+                            <constraint firstItem="rK4-aT-XwT" firstAttribute="bottom" secondItem="gZ6-c7-JI9" secondAttribute="bottom" constant="100" id="hqG-T4-7ON"/>
                             <constraint firstItem="CrL-bu-wn7" firstAttribute="leading" secondItem="rK4-aT-XwT" secondAttribute="leading" id="lJ6-Tu-zKi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rK4-aT-XwT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Page" image="person.fill" catalog="system" selectedImage="person.fill" id="hTb-Si-Vs7"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="gZ6-c7-JI9" id="3kH-Hq-zf5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Q-C4-Uz0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
