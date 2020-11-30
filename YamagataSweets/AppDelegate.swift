@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Firebase
         FirebaseApp.configure()
+        
         //Firestore
         Firestore.firestore()
  

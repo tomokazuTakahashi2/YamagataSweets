@@ -8,10 +8,13 @@
 
 import UIKit
 import KRProgressHUD
+import Firebase
+import FirebaseAuth
 
 class SearchViewController: UIViewController,UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     var array = [Results]()
+//    var heartArray: [FireStoreModel] = []
         
     var selectedItems:Results?
     
@@ -107,7 +110,7 @@ class SearchViewController: UIViewController,UISearchBarDelegate, UICollectionVi
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)as! CollectionViewCell
         
-        cell.setData(array[indexPath.row])
+        cell.setData(array[indexPath.item])
         
         return cell
         

@@ -8,6 +8,8 @@
 
 import UIKit
 import XLPagerTabStrip
+import Firebase
+import FirebaseAuth
 
 class HomeViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, IndicatorInfoProvider{
     
@@ -15,6 +17,7 @@ class HomeViewController2: UIViewController, UICollectionViewDelegate, UICollect
     var itemInfo: IndicatorInfo = "上山"
     
     var array = [Results]()
+//    var heartArray: [FireStoreModel] = []
     
     var selectedItems:Results?
 
@@ -90,7 +93,7 @@ class HomeViewController2: UIViewController, UICollectionViewDelegate, UICollect
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)as! CollectionViewCell
         
-        cell.setData(array[indexPath.row])
+        cell.setData(array[indexPath.item])
         
         return cell
         
